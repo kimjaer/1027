@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@100;200;300;400;500;600&display=swap");
+@font-face {
+  font-family: "TheJamsil5Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: "Roboto Condensed", "TheJamsil5Bold", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.jcb {
+  justify-content: space-between;
+}
+
+.aic {
+  align-items: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+#hd {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+#hd h1 img {
+  height: 3rem;
+}
+
+#gnb > li > a {
+  line-height: 100px;
+  padding: 0 2rem;
+  white-space: nowrap;
+}
+#gnb > li ul {
+  background-color: white;
+  border: 1px solid #ccc;
+  line-height: 2;
+  padding: 0 2rem;
+  white-space: nowrap;
+  min-width: 110px;
+  display: none;
+}
+#gnb > li:hover ul {
+  display: block;
+}
