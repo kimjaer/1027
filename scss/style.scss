@@ -11,6 +11,9 @@ body {
   font-family: 'Roboto Condensed', 'TheJamsil5Bold', sans-serif;
   font-weight: 300;
   font-size: 20px;
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
 }
 
 * {
@@ -72,12 +75,15 @@ li {
 }
 
 #gnb {
+  a:hover {
+    color: red;
+  }
+
   >li {
     >a {
-      line-height: 100px;
-      padding: 0 2rem;
-      white-space: nowrap;
-      
+      line-height: 80px;
+      padding: 0.2rem;
+      font-size: 1.5rem;
     }
 
     ul{
@@ -87,13 +93,25 @@ li {
       padding: 0 2rem;
       white-space: nowrap;
       min-width: 110px;
-      display: none;
+      height: 0;
+      overflow: hidden;
+      transition: 0.5s;
+      top: 100%;
+      border-top: 0;
     }
     }
     >li:hover {
+      z-index: 100;
+
+      >a{
+        color: red;
+      }
+
       ul{
-        display: block;
+        height: 150px;
+
       }
   }
 }
+
 

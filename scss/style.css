@@ -66,10 +66,13 @@ li {
   height: 3rem;
 }
 
+#gnb a:hover {
+  color: red;
+}
 #gnb > li > a {
-  line-height: 100px;
-  padding: 0 2rem;
-  white-space: nowrap;
+  line-height: 80px;
+  padding: 0.2rem;
+  font-size: 1.5rem;
 }
 #gnb > li ul {
   background-color: white;
@@ -78,8 +81,18 @@ li {
   padding: 0 2rem;
   white-space: nowrap;
   min-width: 110px;
-  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  top: 100%;
+  border-top: 0;
+}
+#gnb > li:hover {
+  z-index: 100;
+}
+#gnb > li:hover > a {
+  color: red;
 }
 #gnb > li:hover ul {
-  display: block;
+  height: 150px;
 }
