@@ -5,20 +5,22 @@
   font-weight: 700;
   font-style: normal;
 }
-body {
-  font-family: "Roboto Condensed", "TheJamsil5Bold", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-}
-
 * {
-  padding: 0;
   margin: 0;
-  text-decoration: none;
+  padding: 0;
 }
 
 li {
   list-style: none;
+}
+
+body {
+  font-family: "Roboto Condensed", "TheJamsil5Bold", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -30,24 +32,12 @@ li {
   display: flex;
 }
 
-.flex-column {
-  flex-direction: column;
-}
-
-.flex-grow {
-  flex-grow: 1;
-}
-
 .jcb {
   justify-content: space-between;
 }
 
 .aic {
   align-items: center;
-}
-
-.d-none {
-  display: none;
 }
 
 .rel {
@@ -71,7 +61,7 @@ li {
 }
 #gnb > li > a {
   line-height: 80px;
-  padding: 0.2rem;
+  padding: 0 2rem;
   font-size: 1.5rem;
 }
 #gnb > li ul {
